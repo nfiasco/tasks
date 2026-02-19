@@ -7,6 +7,10 @@ import { TwoDice } from "./components/TwoDice";
 import { CycleHoliday } from "./components/CycleHoliday";
 import { Counter } from "./components/Counter";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import { DoubleHalf } from "./bad-components/DoubleHalf";
+import { ColoredBox } from "./bad-components/ColoredBox";
+import { ShoveBox } from "./bad-components/ShoveBox";
+import { ChooseTeam } from "./bad-components/ChooseTeam";
 
 function App(): React.JSX.Element {
     return (
@@ -14,6 +18,14 @@ function App(): React.JSX.Element {
             <header className="App-header">
                 UD CISC275 with React Hooks and TypeScript
             </header>
+            <hr></hr>
+            <DoubleHalf></DoubleHalf>
+            <hr></hr>
+            <ChooseTeam></ChooseTeam>
+            <hr></hr>
+            <ColoredBox></ColoredBox>
+            <hr></hr>
+            <ShoveBox></ShoveBox>
             <hr></hr>
             <Counter></Counter>
             <hr />
@@ -29,7 +41,9 @@ function App(): React.JSX.Element {
             <hr></hr>
             <hr></hr>
 
-            <h1> Task 3: </h1>
+            <p>
+                <strong>Task 3:</strong>
+            </p>
             <img
                 src={`${process.env.PUBLIC_URL}/Images/E33.jpg`}
                 alt="Favorite Game"
